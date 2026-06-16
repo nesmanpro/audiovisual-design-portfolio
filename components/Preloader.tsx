@@ -43,11 +43,11 @@ export default function Preloader() {
           onUpdate: () => {
             countEl.textContent = String(Math.round(counter.value)).padStart(
               3,
-              "0"
+              "0",
             );
           },
         },
-        0
+        0,
       );
 
       words.forEach((word, i) => {
@@ -55,15 +55,15 @@ export default function Preloader() {
           word,
           { opacity: 0, yPercent: 30 },
           { opacity: 1, yPercent: 0, duration: 0.3 },
-          i * 0.55
-        ).to(word, { opacity: 0, yPercent: -30, duration: 0.3 }, i * 0.55 + 0.42);
+          i * 0.55,
+        ).to(
+          word,
+          { opacity: 0, yPercent: -30, duration: 0.3 },
+          i * 0.55 + 0.42,
+        );
       });
 
-      tl.to(
-        root,
-        { yPercent: -100, duration: 1, ease: "power4.inOut" },
-        2.35
-      );
+      tl.to(root, { yPercent: -100, duration: 1, ease: "power4.inOut" }, 2.35);
     }, root);
 
     return () => ctx.revert();
@@ -84,7 +84,7 @@ export default function Preloader() {
           )}
         </span>
       ))}
-      <span className="preloader-hint mono">NES® Portfolio — 2026</span>
+      <span className="preloader-hint mono">/Letsornot Portfolio — 2026</span>
       <span ref={countRef} className="preloader-count">
         000
       </span>
