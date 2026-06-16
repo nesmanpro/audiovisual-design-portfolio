@@ -28,7 +28,7 @@ export default function Footer() {
 
       // kinetic weight: cta chars bulk up near the cursor, like the hero
       const ctaChars = (split.lines as HTMLElement[]).flatMap((line) =>
-        splitChars(line)
+        splitChars(line),
       );
       const detachKinetic = attachKineticType(root, ctaChars);
 
@@ -59,21 +59,29 @@ export default function Footer() {
 
       <Magnetic strength={0.2}>
         <a
-          href="mailto:hello@nes.design"
+          href="mailto:hello@letsornot.design"
           className="footer-email"
           data-cursor="Say hi"
         >
-          hello@nes.design
+          hello@letornot.design
         </a>
       </Magnetic>
 
       <div className="footer-bottom mono">
-        <span>© 2026 NES® — All rights reserved</span>
+        <span>© 2026 /LETSORNOT — All rights reserved</span>
         <div className="footer-socials">
-          <a href="#" data-cursor="Open">Instagram</a>
-          <a href="#" data-cursor="Open">Dribbble</a>
-          <a href="#" data-cursor="Open">GitHub</a>
-          <a href="#" data-cursor="Open">LinkedIn</a>
+          <a href="#" data-cursor="Open">
+            Instagram
+          </a>
+          <a href="#" data-cursor="Open">
+            Dribbble
+          </a>
+          <a href="#" data-cursor="Open">
+            GitHub
+          </a>
+          <a href="#" data-cursor="Open">
+            LinkedIn
+          </a>
         </div>
       </div>
     </footer>
