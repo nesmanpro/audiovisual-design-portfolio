@@ -39,9 +39,9 @@ export default function About() {
         <span>The short version</span>
       </div>
       <p className="about-text">
-        I&apos;m Nes — a multidisciplinary designer and developer turning brands
-        into <em>living, breathing</em> digital experiences. Eight years of
-        obsessing over grids, easing curves and letterforms, so every pixel
+        I&apos;m /Letsornot — a multidisciplinary designer and developer turning
+        brands into <em>living, breathing</em> digital experiences. Eight years
+        of obsessing over grids, easing curves and letterforms, so every pixel
         earns its place and every interaction <em>feels inevitable</em>.
       </p>
     </section>
